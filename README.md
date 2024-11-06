@@ -14,9 +14,9 @@ x & x > 0 \\
 \exp(x)-1 & x \leq 0 
 \end{cases}$$
 
-and $\mathbf{A} \in \mathbb{R}^{2 \times 5}$, $\mathbf{w} \in \mathbb{R}^2$. Perform **ten (10)** gradient descend update steps on $\mathbf{A}$ and $\mathbf{w}$ with a step size of 0.1. The $\phi$ function is available as `torch.nn.ELU()` in PyTorch.
+with parameters $\mathbf{A} \in \mathbb{R}^{2 \times 5}$, $\mathbf{w} \in \mathbb{R}^2$. Perform **ten (10)** gradient descent update steps on $\mathbf{A}$ and $\mathbf{w}$ with a step size of 0.1. The $\phi$ function is available as `torch.nn.ELU()` in PyTorch.
 
-In the template code, the matrix $\mathbf{A}$, the vector $\mathbf{w}$ and an example input $\mathbf{x}$ are provided and loaded using `torch.load`. Return the value of the function $f$ evaluated at the provided $\mathbf{x}$ *after* the ten gradient descend update steps have been performed (so, one scalar value is returned). For automatic evaluation, say your result is stored in a tensor `out`, please always return `out.view(-1)`.
+In the template code, the matrix $\mathbf{A}$, the vector $\mathbf{w}$ are loaded using `torch.load`. The input $\mathbf{x}$ is passed to the function `assignment_ex1` (where you implement your solution). Return the value of the function $f$ evaluated at the provided $\mathbf{x}$ *after* the ten gradient descent update steps have been performed (so, one scalar value is returned). For automatic evaluation to work properly, and assuming your result is stored in a tensor `out`, please always return `out.view(-1)`.
 
 ---
 
