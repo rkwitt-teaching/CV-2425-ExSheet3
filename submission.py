@@ -9,7 +9,7 @@ import torch
 import torch.nn as nn
 from typing import Callable
 
-# Exercise 3.1 (AND gate)
+# Exercise 3.1 
 def assignment_ex1(x: torch.tensor) ->  torch.tensor:
     A = torch.load('assets/A.pth', weights_only=False)
     w = torch.load('assets/w.pth', weights_only=False)
